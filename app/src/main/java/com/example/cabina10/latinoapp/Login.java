@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.Toast;
-
+/// Marcelo estuvo aquí
 public class Login extends AppCompatActivity {
 
     private EditText etn, etp;

@@ -17,9 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login" />
-        <activity android:name=".StudentsList" />
-        <activity android:name=".StudentDetails"></activity>
+        <activity android:name=".Login" android:screenOrientation="portrait" />
+        <activity android:name=".StudentsList" android:screenOrientation="portrait"/>
+        <activity android:name=".StudentDetails" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
