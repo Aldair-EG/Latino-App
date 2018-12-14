@@ -43,5 +43,15 @@
     <string name="itemA1">DATOS PERSONALES</string>
     <string name="itemA2">ESTUDIANTES</string>
     <string name="itemA3">ASISTENCIA</string>
+    <string name="itemA5">CREAR USUARIO</string>
     <string name="itemA4">SALIR</string>
+
+    //DETALLES DE ESTUDIANTE
+    <string name="dtitulo">INFORMACION PERSONAL</string>
+    <string name="dCodigo">Codigo : </string>
+    <string name="dNombres">Nombres : </string>
+    <string name="dApellidos">Apellidos : </string>
+    <string name="dTelefono">Telefono : </string>
+    <string name="dCorreo">Correo : </string>
+    <string name="dDomicilio">Domicilio : </string>
 </resources>

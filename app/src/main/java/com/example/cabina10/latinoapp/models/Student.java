@@ -20,6 +20,7 @@ public class Student {
         this.FechaNacimiento = _FechaNacimiento;
     }
 
+    public String getId() { return String.format("%s", this.idStudent); }
     public String getDNI() { return String.format("%s", this.DNI); }
     public String getTelefono() { return this.Telefono; }
     public String getNombres() { return this.Nombres; }
@@ -31,10 +32,10 @@ public class Student {
 
     public static ArrayList<Student> getStudents() {
         ArrayList<Student> _list = new ArrayList<>();
-        _list.add(new Student(001, 73568985, "955689875", "Alonso", "Campos", "Torres", "Jr. Los Lirios S/N", "acampos@gmail.com", new Date(2016,12,12)));
-        _list.add(new Student(001, 73568985, "936452356", "Alonso", "Campos", "Torres", "Jr. Los Lirios S/N", "acampos@gmail.com", new Date(2016,12,12)));
-        _list.add(new Student(001, 73568985, "956485232", "Alonso", "Campos", "Torres", "Jr. Los Lirios S/N", "acampos@gmail.com", new Date(2016,12,12)));
-        _list.add(new Student(001, 73568985, "978562356", "Alonso", "Campos", "Torres", "Jr. Los Lirios S/N", "acampos@gmail.com", new Date(2016,12,12)));
+        _list.add(new Student(1, 73568985, "955689875", "Alonso", "Campos", "Torres", "Jr. Los Lirios S/N", "acampos@gmail.com", new Date(2016,12,12)));
+        _list.add(new Student(2, 73568985, "936452356", "Alonso", "Campos", "Torres", "Jr. Los Lirios S/N", "acampos@gmail.com", new Date(2016,12,12)));
+        _list.add(new Student(3, 73568985, "956485232", "Alonso", "Campos", "Torres", "Jr. Los Lirios S/N", "acampos@gmail.com", new Date(2016,12,12)));
+        _list.add(new Student(4, 73568985, "978562356", "Alonso", "Campos", "Torres", "Jr. Los Lirios S/N", "acampos@gmail.com", new Date(2016,12,12)));
         return _list;
     }
 }

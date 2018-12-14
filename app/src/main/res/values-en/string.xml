@@ -45,5 +45,15 @@
     <string name="itemA1">MY INFORMATION</string>
     <string name="itemA2">STUDENTS</string>
     <string name="itemA3">ATTENDANCE</string>
+    <string name="itemA5">NEW USER</string>
     <string name="itemA4">EXIT</string>
+
+    //DETALLES DE ESTUDIANTE
+    <string name="dtitulo">Personal Information</string>
+    <string name="dCodigo">Code : </string>
+    <string name="dNombres">Name : </string>
+    <string name="dApellidos">Surname: </string>
+    <string name="dTelefono">Phone : </string>
+    <string name="dCorreo">E-mail : </string>
+    <string name="dDomicilio">Addrees: </string>
 </resources>
