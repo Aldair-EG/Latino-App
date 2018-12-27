@@ -87,7 +87,7 @@ public class MenuActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-            Toast.makeText(this, "estoy con tu flaca Aldairs :V", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Zona de Registro", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_slideshow) {
             fragmentChange("student-list");
