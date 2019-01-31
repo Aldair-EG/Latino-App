@@ -71,6 +71,9 @@ public class StudentsList extends AppCompatActivity {
         }else if (id == R.id.itema3){
             Intent siguiente = new Intent(this, StudentDetails.class);
             startActivity(siguiente);
+        }else if (id == R.id.item5){
+            Intent siguiente = new Intent(this, AdministratorUsers.class);
+            startActivity(siguiente);
         }else if (id == R.id.itema4){
             finish();
         }

@@ -12,6 +12,9 @@
         android:id="@+id/itema3"
         android:title="@string/itemA3" />
     <item
+        android:id="@+id/item5"
+        android:title="CRUD" />
+    <item
         android:id="@+id/itema4"
         android:title="@string/itemA4" />
 </menu>
