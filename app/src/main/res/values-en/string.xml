@@ -31,8 +31,8 @@
     //Formulario de Registro
     <string name="titleRegisterForm">USER REGISTRATION</string>
     <string name="email">Enter your email :</string>
-    <string name="telefono">Enter your phone :</string>
-    <string name="usuario">Enter a user name :</string>
+    <string name="telefono">User name :</string>
+    <string name="usuario">User code :</string>
     <string name="password">Enter a strong password :</string>
     <string name="botonRegistrar">REGISTER</string>
 

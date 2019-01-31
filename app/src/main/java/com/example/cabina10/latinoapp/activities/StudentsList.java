@@ -63,13 +63,13 @@ public class StudentsList extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
         if (id == R.id.itema1){
-            Intent siguiente = new Intent(this, Login.class);
+            Intent siguiente = new Intent(this, StudentDetails.class);
             startActivity(siguiente);
         }else if (id == R.id.itema2){
-            Intent siguiente = new Intent(this, RegisterForm.class);
+            Intent siguiente = new Intent(this, StudentsList.class);
             startActivity(siguiente);
         }else if (id == R.id.itema3){
-            Intent siguiente = new Intent(this, RegisterForm.class);
+            Intent siguiente = new Intent(this, StudentDetails.class);
             startActivity(siguiente);
         }else if (id == R.id.itema4){
             finish();

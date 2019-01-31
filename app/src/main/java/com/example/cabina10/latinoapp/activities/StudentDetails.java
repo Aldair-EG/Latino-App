@@ -32,13 +32,13 @@ public class StudentDetails extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
         if (id == R.id.iteme1){
-            Intent siguiente = new Intent(this, Login.class);
-            startActivity(siguiente);
+            //Intent siguiente = new Intent(this, StudentDetails.class);
+            //startActivity(siguiente);
         }else if (id == R.id.iteme2){
-            Intent siguiente = new Intent(this, RegisterForm.class);
-            startActivity(siguiente);
+            //Intent siguiente = new Intent(this, RegisterForm.class);
+            //startActivity(siguiente);
         }else if (id == R.id.iteme3){
-            Toast.makeText(this, "asdasd", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Sesion cerrada", Toast.LENGTH_SHORT).show();
             finish();
         }
         return super.onOptionsItemSelected(item);

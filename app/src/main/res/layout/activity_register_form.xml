@@ -12,7 +12,6 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:text="@string/titleRegisterForm"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
@@ -25,15 +24,15 @@
         android:text="@string/usuario"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/txt_code"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="phone"
         android:textAlignment="center"
         android:textColor="@color/colorAccent" />
 
@@ -47,7 +46,7 @@
         android:layout_marginTop="20dp"/>
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txt_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -65,11 +64,11 @@
         android:layout_marginTop="20dp"/>
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/txt_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="phone"
+        android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="@color/colorAccent" />
 
@@ -80,10 +79,10 @@
         android:text="@string/password"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="20dp"/>
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/txtpassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -98,6 +97,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:background="@color/colorPrimaryDark"
+        android:onClick="Registrar"
         android:text="@string/botonRegistrar"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
