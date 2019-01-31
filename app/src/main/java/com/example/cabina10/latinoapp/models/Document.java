@@ -19,19 +19,24 @@ public class Document {
     public String getRuta() {
         return this.Ruta;
     }
+    public String getNombre (){
+        return this.Nombre;
+    }
+    public String getDescripcion() {
+        return this.Descripcion;
+    }
+    public String getFechaText() {
+        return this.Fecha.toString();
+    }
 
     public static ArrayList<Document> getDocuments() {
         ArrayList<Document> _list = new ArrayList<>();
-        _list.add(new Document(1,
-                "Exame",
-                "El exame",
-                new Date(2016,12,12),
-                "http://www.africau.edu/images/default/sample.pdf"));
-        _list.add(new Document(1,
-                "Simulacro",
-                "El exame",
-                new Date(2016,12,12),
-                "http://dondeestaelpwd.pdf"));
+        _list.add(new Document(1, "Exame", "El exame", new Date(2016,12,12), "http://precadete.cima.com.pe/documentos/suboficiales/prospecto/PROSPECTO2017II.pdf"));
+        _list.add(new Document(1, "Exame", "El exame", new Date(2016,12,12), "http://precadete.cima.com.pe/documentos/suboficiales/prospecto/PROSPECTO2017II.pdf"));
+        _list.add(new Document(1, "Exame", "El exame", new Date(2016,12,12), "http://precadete.cima.com.pe/documentos/suboficiales/prospecto/PROSPECTO2017II.pdf"));
+        _list.add(new Document(1, "Exame", "El exame", new Date(2016,12,12), "http://precadete.cima.com.pe/documentos/suboficiales/prospecto/PROSPECTO2017II.pdf"));
+        _list.add(new Document(1, "Exame", "El exame", new Date(2016,12,12), "http://precadete.cima.com.pe/documentos/suboficiales/prospecto/PROSPECTO2017II.pdf"));
+        _list.add(new Document(1, "Exame", "El exame", new Date(2016,12,12), "http://precadete.cima.com.pe/documentos/suboficiales/prospecto/PROSPECTO2017II.pdf"));
         return _list;
     }
 

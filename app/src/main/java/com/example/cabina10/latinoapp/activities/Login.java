@@ -1,4 +1,4 @@
-package com.example.cabina10.latinoapp;
+package com.example.cabina10.latinoapp.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,8 +7,16 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.Toast;
+<<<<<<< HEAD:app/src/main/java/com/example/cabina10/latinoapp/Login.java
 /// Marcelo estuvo aquí
 public class Login extends AppCompatActivity {
+=======
+
+import com.example.cabina10.latinoapp.R;
+
+public class
+Login extends AppCompatActivity {
+>>>>>>> master:app/src/main/java/com/example/cabina10/latinoapp/activities/Login.java
 
     private EditText etn, etp;
     @Override
@@ -23,8 +31,8 @@ public class Login extends AppCompatActivity {
         etn = (EditText)findViewById(R.id.txt_Nombre);
         etp = (EditText)findViewById(R.id.txt_Contrasenia);
 
-        //AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "BD", null, 1);
-        //SQLiteDatabase BD  = admin.getWritableDatabase();
+        //Button boton = (Button) findViewById(R.id.button);
+        //boton.setEnabled(false);
     }
     //METODO PARA INICIAR SESION
     public void Ingresar(View view){
@@ -43,12 +51,23 @@ public class Login extends AppCompatActivity {
             InputMethodManager inm = (InputMethodManager)getSystemService(this.INPUT_METHOD_SERVICE);
             inm.showSoftInput(etp, InputMethodManager.SHOW_IMPLICIT);
         }else
-        if (!nombre.equals("")){
+        if (!nombre.equals("") && nombre.equals("Aldair")){
+            Toast.makeText(this, "Hola " + nombre, Toast.LENGTH_SHORT).show();
+            Intent siguiente = new Intent(this, StudentDetails.class);
+            siguiente.putExtra("Estudiante", nombre);
+            startActivity(siguiente);
+            finish();
+        }else
+        if (!nombre.equals("") && nombre.equals("Carlos")){
             Toast.makeText(this, "Hola " + nombre, Toast.LENGTH_SHORT).show();
             Intent siguiente = new Intent(this, StudentsList.class);
             siguiente.putExtra("Estudiante", nombre);
             startActivity(siguiente);
             finish();
+        }
+        else
+        if (!nombre.equals("")){
+            Toast.makeText(this, "Usuario no registrado ", Toast.LENGTH_SHORT).show();
         }
     }
 
