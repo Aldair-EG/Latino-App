@@ -46,4 +46,8 @@
     <string name="itemA2">STUDENTS</string>
     <string name="itemA3">ATTENDANCE</string>
     <string name="itemA4">EXIT</string>
+
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
+        AIzaSyBjT8DamHvea_7XSm3rAND8uJ_Q8CWbNrg
+    </string>
 </resources>

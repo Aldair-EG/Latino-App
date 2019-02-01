@@ -58,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
         }else if (id == R.id.item2){
             Intent siguiente = new Intent(this, RegisterForm.class);
             startActivity(siguiente);
+        }else if (id == R.id.item4){
+            Intent siguiente = new Intent(this, Map.class);
+            startActivity(siguiente);
         }else if (id == R.id.item3){
             finish();
         }
