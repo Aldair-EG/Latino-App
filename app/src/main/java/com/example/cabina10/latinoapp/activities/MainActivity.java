@@ -15,8 +15,16 @@ import com.example.cabina10.latinoapp.adapters.DocumentAdapter;
 import com.example.cabina10.latinoapp.models.Document;
 
 import java.util.ArrayList;
+import java.util.Date;
+
+import com.example.cabina10.latinoapp.models.Student;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
+
+    FirebaseDatabase databaseFireBase;
+    DatabaseReference studentsReference;
 
     private ListView tvmain;
     @Override
@@ -41,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(browserIntent);
             }
         });
+
+        databaseFireBase = FirebaseDatabase.getInstance();
+        studentsReference = databaseFireBase.getReference("students");
     }
 
     //Metodo para mostrar y ocultar Menu
@@ -61,6 +72,13 @@ public class MainActivity extends AppCompatActivity {
         }else if (id == R.id.item4){
             Intent siguiente = new Intent(this, Map.class);
             startActivity(siguiente);
+        }else if (id == R.id.item5){
+            ArrayList<Student> students = new ArrayList<>();
+
+            Student myNewStudent = new Student(1, 76523568,"922658758", "Carmen", "Martinez", "Torres", "Jr. Atacama", "carmen@gmail.com");
+            students.add(myNewStudent);
+
+            studentsReference.setValue(students);
         }else if (id == R.id.item3){
             finish();
         }
